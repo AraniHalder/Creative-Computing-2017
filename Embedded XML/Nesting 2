@@ -23,4 +23,10 @@ POLYGONS (Where number of sides in a polygon < 5)
 			<Rhombus>
 		</Parallelogram>
 	</Quadrilaterals>
+	<Pentagon>
+	<Hexagon>
+	<Heptagon>
+	<Octagon>
+	<Nonagon>
+	<Decagon>
 </Polygons>
