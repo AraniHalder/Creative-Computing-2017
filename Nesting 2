@@ -1,0 +1,26 @@
+
+POLYGONS (Where number of sides in a polygon < 5)
+
+<Polygons>
+	<Triangles>
+		<By side>
+			<Equilateral>
+			<Scalene>
+			<Isosceles>
+		</By side>
+		<By angle>
+			<Acute>
+			<Obtuse>
+			<Right>
+			<Equiangular>
+		</By angle>
+	</Triangles>
+	<Quadrilaterals>
+		<Trapezoid>
+		<Parallelogram>
+			<Square>
+			<Rectangle>
+			<Rhombus>
+		</Parallelogram>
+	</Quadrilaterals>
+</Polygons>
