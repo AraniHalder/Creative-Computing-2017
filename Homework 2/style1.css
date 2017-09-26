@@ -1,0 +1,95 @@
+h1{
+	font-family: "optima";
+	text-align: center;
+	color: PaleTurquoise;
+	background-color: #000;
+	padding: 50px;
+}
+body{
+	background-color: PaleTurquoise;
+	padding: 20px;
+}
+p{
+	font-family: "futura";
+	color: #000;
+}
+#images{
+	text-align: center;
+}
+a{
+	font-size: 25px;
+	font-family: "futura";
+	font-style: normal;
+	color: #000;
+}
+a:hover{
+	font-style: italic;
+	color: Tomato;
+	background-color: PaleTurquoise;
+}
+#links{
+	text-align: center;
+}
+#forest{
+	background-color: Orange;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#waterfall{
+	background-color: LightSeaGreen;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#cave{
+	background-color: Violet;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#exit{
+	background-color: YellowGreen;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#donteat{
+	background-color: Plum;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#bridge{
+	background-color: Orange;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#boat{
+	background-color: PaleVioletRed;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#eat{
+	background-color: Violet;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#endings{
+	text-align: center;
+}
+#slip{
+	background-color: MediumAquaMarine;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+#mountains{
+	background-color: LightSteelBlue;
+	padding: 20px;
+	border-style: solid;
+	border-width: 1px;
+}
