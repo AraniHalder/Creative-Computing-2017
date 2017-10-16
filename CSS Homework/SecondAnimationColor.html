@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body{
+	margin:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #1E90FF;
+}
+#square{
+	background-color: White;
+	position: absolute;
+	width:500px;
+	height:500px;
+}
+#bg1{
+	background-color: #0000CD;
+	position: absolute;
+	width:500px;
+	height:500px;
+	transform: rotate(45deg);
+}
+#square2{
+	background-color: Black;
+	position: absolute;
+	width:350px;
+	height:350px;
+}
+#square3{
+	background-color: White;
+	position: absolute;
+	width:240px;
+	height:240px;
+	transform: rotate(45deg);
+}
+#square4{
+	background-color: Black;
+	position: absolute;
+	width:170px;
+	height:170px;
+}
+@keyframes square{
+50%{
+	background-color: White;
+}
+100%{
+	background-color: #4169E1;
+}
+}
+@keyframes bg1{
+50%{
+	background-color: #0000CD;
+}
+100%{
+	background-color: White;
+}
+}
+	@keyframes square2{
+	10%{
+		background-color: White;
+		transform: rotate(36deg);
+		width:350px;
+		height:350px;
+	}
+	20%{
+		background-color: Black;
+		transform: rotate(72deg);
+		width:360px;
+		height:360px;
+	}
+	30%{
+		background-color: White;
+		transform: rotate(108deg);
+		width:375px;
+		height:375px;
+	}
+	40%{
+		background-color: Black;
+		transform: rotate(144deg);
+		width:340px;
+		height:340px;
+	}
+	50%{
+		background-color: White;
+		transform: rotate(180deg);
+		width:435px;
+		height:435px;
+	}
+	60%{
+		background-color: Black;
+		transform: rotate(216deg);
+		width:350px;
+		height:350px;
+	}
+	70%{
+		background-color: White;
+		transform: rotate(252deg);
+		width:365px;
+		height:365px;
+	}
+	80%{
+		background-color: Black;
+		transform: rotate(288deg);
+		width:365px;
+		height:365px;
+	}
+	90%{
+		background-color: White;
+		transform: rotate(324deg);
+		width:350px;
+		height:350px;
+	}
+	100%{
+		background-color: Black;
+		transform: rotate(360deg);
+		width:350px;
+		height:350px;
+	}
+	}
+		@keyframes square3{
+		10%{
+			background-color: Black;
+			transform: rotate(9deg);
+			width:245px;
+			height:245px;
+		}
+		20%{
+			background-color: White;
+			transform: rotate(-27deg);
+			width:270px;
+			height:270px;
+		}
+		30%{
+			background-color: Black;
+			transform: rotate(-63deg);
+			width:247px;
+			height:247px;
+		}
+		40%{
+			background-color: White;
+			transform: rotate(-99deg);
+			width:245px;
+			height:245px;
+		}
+		50%{
+			background-color: Black;
+			transform: rotate(-135deg);
+			width:300px;
+			height:300px;
+		}
+		60%{
+			background-color: White;
+			transform: rotate(-171deg);
+			width:245px;
+			height:245px;
+		}
+		70%{
+			background-color: Black;
+			transform: rotate(-207deg);
+			width:247px;
+			height:247px;
+		}
+		80%{
+			background-color: White;
+			transform: rotate(-243deg);
+			width:270px;
+			height:270px;
+		}
+		90%{
+			background-color: Black;
+			transform: rotate(-279deg);
+			width:245px;
+			height:245px;
+		}
+		100%{
+			background-color: White;
+			transform: rotate(-315deg);
+			width:240px;
+			height:240px;
+		}
+		}
+			@keyframes square4{
+			10%{
+				background-color: White;
+				transform: rotate(36deg);
+				width:185px;
+				height:185px;
+			}
+			20%{
+				background-color: Black;
+				transform: rotate(72deg);
+				width:170px;
+				height:170px;
+			}
+			30%{
+				background-color: White;
+				transform: rotate(108deg);
+				width:165px;
+				height:165px;
+			}
+			40%{
+				background-color: Black;
+				transform: rotate(144deg);
+				width:190px;
+				height:190px;
+			}
+			50%{
+				background-color: White;
+				transform: rotate(180deg);
+				width:165px;
+				height:165px;
+			}
+			60%{
+				background-color: Black;
+				transform: rotate(216deg);
+				width:190px;
+				height:190px;
+			}
+			70%{
+				background-color: White;
+				transform: rotate(252deg);
+				width:165px;
+				height:165px;
+			}
+			80%{
+				background-color: Black;
+				transform: rotate(288deg);
+				width:170px;
+				height:170px;
+			}
+			90%{
+				background-color: White;
+				transform: rotate(324deg);
+				width:185px;
+				height:185px;
+			}
+			100%{
+				background-color: Black;
+				transform: rotate(360deg);
+				width:170px;
+				height:170px;
+			}
+			}
+.layer1{
+	animation: square 0.3s infinite; 
+}
+.bglayer1{
+	animation: bg1 0.3s infinite; 
+}
+.layer2{
+	animation: square2 2s infinite;
+}
+.layer3{
+	animation: square3 2s infinite;
+}
+.layer4{
+	animation: square4 2s infinite;
+}
+</style>
+</head>
+<body>
+<div id="bg1" class="bglayer1"></div>
+<div id="square" class="layer1"></div>
+<div id="square2" class="layer2"> </div>
+<div id="square3" class="layer3"> </div>
+<div id="square4" class="layer4"></div>
+</body>
+</html>
