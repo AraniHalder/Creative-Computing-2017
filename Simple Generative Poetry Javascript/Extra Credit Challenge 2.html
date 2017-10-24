@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html,body{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: purple;
+}
+h1{
+	font-size:8vmin;
+    font-family: "avenir";
+	color: white;
+}
+</style>
+</head>
+<body onclick="change()">
+<h1 id="result"></h1>
+<script>
+
+function change(){
+var basephrase = [
+"easier lost than found",
+"a problem halved",
+"a living death",
+"in the eye of the beholder",
+"the head but woman turns it",
+"known by the company he keeps",
+"deceptive",
+"thicker than water",
+"good for the soul",
+"always a coward",
+"all the sweeter when won with pain",
+"the better part of valour",
+"the thief of time",
+"as fit as a fiddle",
+"as hard as nails",
+"as sick as a dog",
+"health to the sick and riches to the poor",
+"the best sauce",
+"what you eat",
+"better then none",
+"louder than words",
+"an excellent remedy against slander",
+"only a bench covered in purple velvet",
+"an ill wind that blows no-one some good",
+"the mother of invention",
+"the devil's playfellow",
+"worth two in the bush",
+"like chickens come home to roost",
+"like a fish out of water",
+"a gift horse in the mouth",
+"often a wrong cut",
+"in for a penny, in for a pound",
+"worth two tomorrows",
+"a soft pillow",
+"quick in dying",
+"always in a hurry, always behind",
+"in one ear and out the other",
+"like an old fool"
+
+];
+// var phrase = [
+
+// ];
+var index = Math.floor(Math.random()*basephrase.length);
+// var swap = Math.floor(Math.random()*phrase.length);
+// var wordtwo = phrase [swap];
+var word = basephrase [index];
+phrase = "A true friend is " +word+ ".";
+
+
+document.getElementById("result").innerHTML= phrase;
+}
+</script>
+</body>
+</html>
