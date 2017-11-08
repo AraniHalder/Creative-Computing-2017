@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+
+	</head>
+	<body>
+	<script>
+
+var string = "Art thou the Bird whom Man loves best , The pious Bird with the scarlet breast , Our little English Robin ; The Bird that comes about our doors  When Autumn winds are sobbing?   Art thou the Peter of Norway Boors?    Their Thomas in Finland ,    And Russia far inland? The Bird, whom by some name or other All men who know thee call their Brother,               The Darling of Children and men? Could Father Adam open his eyes, And see this sight beneath the skies, He'd wish to close them again. If the Butterfly knew but his friend Hither his flight he would bend, And find his way to me Under the branches of the tree: In and out, he darts about; His little heart is throbbing:                          Can this be the Bird, to man so good,    Our consecrated Robin! That, after their bewildering, Did cover with leaves the little children,    So painfully in the wood? What ail'd thee Robin that thou could'st pursue    A beautiful Creature, That is gentle by nature? Beneath the summer skyFrom flower to flower let him fly;                      'Tis all that he wishes to do. The Chearer Thou of our in-door sadness, He is the Friend of our summer gladness: What hinders, then, that ye should be Playmates in the sunny weather, And fly about in the air together? Like the hues of thy breast His beautiful wings in crimson are drest, A brother he seems of thine own: If thou would'st be happy in thy nest,                  O pious Bird! whom Man loves best, Love him, or leave him alone! " 
+;
+
+var words = string.split(/\s+/);
+
+var dictionary = {};
+
+for(var i = 0; i < words.length-1; i = i + 1){
+	var word = words[i];
+	var nextword = words[i+1];
+	if (dictionary [word] == undefined){
+		dictionary[word] = [];
+	}
+	dictionary[word].push(nextword);
+}
+
+var startword = words [Math.floor (Math.random()*words.length)];
+
+var phrase = [ startword];
+
+for (var i = 0; i < 5; i++){
+	var word = phrase[i];
+	var nextwords = dictionary[word];
+	var nextword = nextwords [Math.floor(Math.random()*nextwords.length)];
+	phrase.push(nextword);
+}
+
+console.log (phrase);
+
+for (var i = 0; i < phrase.length; i++){
+	document.body.innerHTML += phrase[i] + " ";
+}
+
+</script>
+</body>
+</html>

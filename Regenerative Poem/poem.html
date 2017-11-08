@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+
+	</head>
+	<body>
+	<script>
+
+var string = " TO THE DAISY.    In youth from rock to rock I went   From hill to hill, in discontent   Of pleasure high and turbulent,           Most pleas'd when most uneasy;   But now my own delights I make,   My thirst at every rill can slake,   And gladly Nature's love partake           Of thee, sweet Daisy!    When soothed a while by milder airs,   Thee Winter in the garland wears                            That thinly shades his few grey hairs;            Spring cannot shun thee;   Whole summer fields are thine by right;   And Autumn, melancholy Wight!   Doth in thy crimson head delight            When rains are on thee.    In shoals and bands, a morrice train,   Thou greet'st the Traveller in the lane;   If welcome once thou count'st it gain;            Thou art not daunted,                              Nor car'st if thou be set at naught;   And oft alone in nooks remote   We meet thee, like a pleasant thought,            When such are wanted.    Be Violets in their secret mews   The flowers the wanton Zephyrs chuse;   Proud be the Rose, with rains and dews           Her head impearling;   Thou liv'st with less ambitious aim,   Yet hast not gone without thy fame;                         Thou art indeed by many a claim           The Poet's darling.    If to a rock from rains he fly,   Or, some bright day of April sky,   Imprison'd by hot sunshine lie           Near the green holly,   And wearily at length should fare;   He need but look about, and there   Thou art! a Friend at hand, to scare           His melancholy.                                      A hundred times, by rock or bower,   Ere thus I have lain couch'd an hour,   Have I derived from thy sweet power           Some apprehension;   Some steady love; some brief delight;   Some memory that had taken flight;   Some chime of fancy wrong or right;           Or stray invention.    If stately passions in me burn,   And one chance look to Thee should turn,                    I drink out of an humbler urn           A lowlier pleasure;   The homely sympathy that heeds   The common life, our nature breeds;   A wisdom fitted to the needs           Of hearts at leisure.    When, smitten by the morning ray,   I see thee rise alert and gay,   Then, chearful Flower! my spirits play           With kindred motion:                                At dusk, I've seldom mark'd thee press   The ground, as if in thankfulness,   Without some feeling, more or less,           Of true devotion.    And all day long I number yet,   All seasons through, another debt,   Which I wherever thou art met,           To thee am owing;   An instinct call it, a blind sense;   A happy, genial influence,                                  Coming one knows not how nor whence,           Nor whither going.    Child of the Year! that round dost run   Thy course, bold lover of the sun,   And chearful when the day's begun           As morning Leveret,   Thou long the Poet's praise shalt gain;   Thou wilt be more belov'd by men   In times to come; thou not in vain           Art Nature's Favorite.                            " 
+;
+
+var words = string.split(/\s+/);
+
+var dictionary = {};
+
+for(var i = 0; i < words.length-1; i = i + 1){
+	var word = words[i];
+	var nextword = words[i+1];
+	if (dictionary [word] == undefined){
+		dictionary[word] = [];
+	}
+	dictionary[word].push(nextword);
+}
+
+var startword = words [Math.floor (Math.random()*words.length)];
+
+var phrase = [ startword];
+
+for (var i = 0; i < 7; i++){
+	var word = phrase[i];
+	var nextwords = dictionary[word];
+	var nextword = nextwords [Math.floor(Math.random()*nextwords.length)];
+	phrase.push(nextword);
+}
+
+console.log (phrase);
+
+for (var i = 0; i < phrase.length; i++){
+	document.body.innerHTML += phrase[i] + " ";
+}
+
+</script>
+</body>
+</html>
